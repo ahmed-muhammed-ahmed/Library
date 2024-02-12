@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="form">
+        <div class="logo">
+          <img src="./img/books.svg" alt="book" />
+          <h1>Library</h1>
+        </div>
+        <form action="#" method="post">
+          <div class="input-group">
+            <input type="text" name="title" id="title" required />
+            <label for="title">Title of the book </label>
+            <div class="br-btm"></div>
+          </div>
+
+          <div class="input-group">
+            <input type="text" name="author" id="author" required />
+            <label for="author">Author of the book </label>
+            <div class="br-btm"></div>
+          </div>
+
+          <div class="input-group">
+            <input type="number" name="page" id="page" required />
+            <label for="page">Number of pages</label>
+            <div class="br-btm"></div>
+          </div>
+          <div class="input-checkbox">
+            <input type="checkbox" name="read" id="read" required />
+            <label for="read">I have already read this book</label>
+          </div>
+          <button class="btn" type="submit">Add a new book &plus;</button>
+        </form>
+      </div>
+      <div class="book-store">
+        <div class="book-stat">
+          <p class="read">Books read: <span></span></p>
+          <p class="unread">Books unread: <span></span></p>
+          <p class="total">Total books read: <span></span></p>
+          <p class="sort">Sort &downarrow;</p>
+          <button class="btn-delete">Delete All</button>
+        </div>
+
+        <div class="book-list book-header">
+          <div class="title">Title</div>
+          <div class="author">Author</div>
+          <div class="page">Page</div>
+          <div class="status">Status</div>
+          <div class="remove">Remove</div>
+        </div>
+
+        <div class="book-list">
+          <div class="title">The Miracle of morning</div>
+          <div class="author">James Baldwin</div>
+          <div class="page">340</div>
+          <div class="status">Read</div>
+          <div class="remove">Remove</div>
+        </div>
+
+        <div class="book-list">
+          <div class="title">The Miracle of morning</div>
+          <div class="author">James Baldwin</div>
+          <div class="page">340</div>
+          <div class="status">Read</div>
+          <div class="remove">Remove</div>
+        </div>
+
+        <div class="book-list">
+          <div class="title">The Miracle of morning</div>
+          <div class="author">James Baldwin</div>
+          <div class="page">340</div>
+          <div class="status">Read</div>
+          <div class="remove">Remove</div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
