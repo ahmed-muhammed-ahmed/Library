@@ -117,10 +117,11 @@ input {
   text-transform: uppercase;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
-
+.book-header,
 .book-list {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  column-gap: 6.4rem;
   align-items: center;
   padding: 3.2rem;
   margin: 0 15rem;
@@ -141,5 +142,33 @@ input {
   height: 2px;
   width: 100%;
   position: absolute;
-  border-bottom: 3px dashed #0c2d57;
+  border-bottom: 3px dashed var(--dark-blue);
+}
+
+.remove svg {
+  height: 4.4rem;
+  width: 4.4rem;
+  fill: var(--dark-orange);
+  cursor: pointer;
+}
+
+.status-read svg {
+  fill: #10b981;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+}
+
+.status-read {
+  font-size: 4.8rem;
+  color: #10b981;
+  cursor: pointer;
+}
+
+.status-unread {
+  color: var(--dark-orange);
+  color: #dc2626;
+  color: #e35d31;
+  cursor: pointer;
+  font-size: 4.8rem;
 }
