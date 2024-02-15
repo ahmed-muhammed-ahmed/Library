@@ -1,8 +1,10 @@
 :root {
   --dark-blue: #0c2d57;
   --dark-orange: #fc6736;
+  --darker-orange: #e35d31;
   --light-orange: #ffb0b0;
   --dark-gray: #efecec;
+  --green: #10b981;
 }
 
 *,
@@ -152,23 +154,14 @@ input {
   cursor: pointer;
 }
 
-.status-read svg {
-  fill: #10b981;
-  width: 3.2rem;
-  height: 3.2rem;
-  cursor: pointer;
-}
-
 .status-read {
   font-size: 4.8rem;
-  color: #10b981;
+  color: var(--green);
   cursor: pointer;
 }
 
 .status-unread {
-  color: var(--dark-orange);
-  color: #dc2626;
-  color: #e35d31;
+  color: var(--darker-orange);
   cursor: pointer;
   font-size: 4.8rem;
 }
