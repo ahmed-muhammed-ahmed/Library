@@ -99,3 +99,10 @@ function attachToggleReadEventListeners() {
     });
   });
 }
+
+function eventHandler() {
+  library.splice(0, library.length);
+  displayBook(library);
+}
+
+btnDeleteAll.addEventListener("click", eventHandler);
