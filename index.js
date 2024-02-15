@@ -69,6 +69,7 @@ function updateUI(e) {
   displayBook(library);
   attachRemoveEventListeners();
   inputTitle.value = inputAuthor.value = inputPage.value = "";
+  inputCheckRead.checked = false;
 }
 
 btnSubmit.addEventListener("click", updateUI);
